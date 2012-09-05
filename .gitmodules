@@ -1,0 +1,66 @@
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = https://github.com/tpope/vim-rails
+[submodule "bundle/vim-cucumber"]
+	path = bundle/vim-cucumber
+	url = https://github.com/tpope/vim-cucumber
+[submodule "bundle/vim-haml"]
+	path = bundle/vim-haml
+	url = https://github.com/tpope/vim-haml
+[submodule "bundle/vim-commentary"]
+	path = bundle/vim-commentary
+	url = https://github.com/tpope/vim-commentary
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = https://github.com/tpope/vim-surround
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script
+[submodule "bundle/vim-powerline"]
+	path = bundle/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "bundle/vim-getafe"]
+	path = bundle/vim-getafe
+	url = https://github.com/larssmit/vim-getafe
+[submodule "bundle/vim-color-github"]
+	path = bundle/vim-color-github
+	url = https://github.com/telamon/vim-color-github
+[submodule "bundle/vim-irblack"]
+	path = bundle/vim-irblack
+	url = https://github.com/wgibbs/vim-irblack
+[submodule "bundle/janus-colors"]
+	path = bundle/janus-colors
+	url = https://github.com/TechnoGate/janus-colors
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/vim-scripts/molokai
+[submodule "bundle/pyte"]
+	path = bundle/pyte
+	url = https://github.com/vim-scripts/pyte
+[submodule "bundle/Color-Sampler-Pack"]
+	path = bundle/Color-Sampler-Pack
+	url = https://github.com/vim-scripts/Color-Sampler-Pack
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/vim-vividchalk"]
+	path = bundle/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk
+[submodule "bundle/endwise"]
+	path = bundle/endwise
+	url = https://github.com/tpope/vim-endwise
