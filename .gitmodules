@@ -64,3 +64,12 @@
 [submodule "bundle/endwise"]
 	path = bundle/endwise
 	url = https://github.com/tpope/vim-endwise
+[submodule "bundle/vim_potion"]
+	path = bundle/vim_potion
+	url = https://github.com/gapthemind/vim_potion
+[submodule "bundle/conque"]
+	path = bundle/conque
+	url = https://github.com/rosenfeld/conque-term.git
+[submodule "bundle/zoomwin"]
+	path = bundle/zoomwin
+	url = https://github.com/rphillips/vim-zoomwin

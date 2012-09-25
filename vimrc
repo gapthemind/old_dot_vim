@@ -51,7 +51,7 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-colorscheme calmar256-dark
+colorscheme solarized
 
 " Save pinky pain ;; => Esc
 inoremap <Leader><Leader> <ESC>
@@ -60,3 +60,12 @@ nnoremap <Leader>h :set invhlsearch<CR>
 inoremap <Leader>n <ESC>:NERDTreeToggle<CR>
 vnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
+
+" resize current buffer by +/- 5 
+nnoremap <Leader>wr :vertical resize -5<cr>
+nnoremap <Leader>ws :resize +5<cr>
+nnoremap <Leader>w2 :resize -5<cr>
+nnoremap <Leader>we :vertical resize +5<cr> 
+
+" zoom buffer
+nnoremap <Leader>ww :call ZoomWin()<cr><cr>
