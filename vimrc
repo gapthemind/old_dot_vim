@@ -7,12 +7,12 @@ if has("gui_running")
   set guioptions-=T
   set guioptions-=r
   set guioptions-=L
-endif 
+endif
 
 set nocompatible               " be iMproved
 
 " show numbers
-set number 
+set number
 
 " tildeop allops for commands like ~w
 " set tildeop
@@ -37,7 +37,7 @@ set nowritebackup
 
 " no .swp files
 set noswapfile
-  
+
 " Control +  P for fuzzy file open
 let g:ctrlp_working_path_mode = 0
 
@@ -51,7 +51,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-colorscheme solarized
+set background=dark
+colorscheme molokai
 
 " Save pinky pain ;; => Esc
 inoremap <Leader><Leader> <ESC>
@@ -61,11 +62,22 @@ inoremap <Leader>n <ESC>:NERDTreeToggle<CR>
 vnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>n :NERDTreeToggle<CR>
 
-" resize current buffer by +/- 5 
+" resize current buffer by +/- 5
 nnoremap <Leader>wr :vertical resize -5<cr>
 nnoremap <Leader>ws :resize +5<cr>
 nnoremap <Leader>w2 :resize -5<cr>
-nnoremap <Leader>we :vertical resize +5<cr> 
+nnoremap <Leader>we :vertical resize +5<cr>
 
 " zoom buffer
 nnoremap <Leader>ww :call ZoomWin()<cr><cr>
+
+" vimux
+map <Leader>tr :call VimuxRunCommand("rspec " . bufname("%"))<CR>
+map <Leader>ta :call VimuxRunCommand("rspec spec")<CR>
+map <Leader>tt :VimuxRunLastCommand<CR>
+map <Leader>tq :VimuxCloseRunner<CR>
+map <Leader>tp :VimuxPromptCommand<CR>
+
+" Tagbar
+let g:tagbar_ctags_bin='/usr/local/bin/ctags'
+nmap <F8> :TagbarToggle<CR>
