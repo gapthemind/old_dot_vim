@@ -17,12 +17,15 @@ set number
 " tildeop allops for commands like ~w
 " set tildeop
 
-" set the leader key to ';' (easy to type)
-let mapleader = ";"
+" set the leader key to ',' (easy to type)
+let mapleader = ","
+
+" You can type ;w instead of :w
+nnoremap ; :
 
 set incsearch "Incremental search
 set hlsearch "Search highlight
-
+nnoremap <silent> <Leader>/ :nohlsearch<CR>
 " 256-color terminal
 set t_Co=256
 
@@ -51,11 +54,10 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
-set background=dark
-colorscheme molokai
+colorscheme solarized
 
-" Save pinky pain ;; => Esc
-inoremap <Leader><Leader> <ESC>
+" Save pinky pain ,m => Esc
+inoremap <Leader>m <ESC>
 nnoremap <Leader>h :set invhlsearch<CR>
 
 inoremap <Leader>n <ESC>:NERDTreeToggle<CR>
@@ -73,6 +75,7 @@ nnoremap <Leader>ww :call ZoomWin()<cr><cr>
 
 " vimux
 map <Leader>tr :call VimuxRunCommand("rspec " . bufname("%"))<CR>
+map <Leader>tl :call VimuxRunCommand("rspec " . bufname("%") . ":" . line("."))<CR>
 map <Leader>ta :call VimuxRunCommand("rspec spec")<CR>
 map <Leader>tt :VimuxRunLastCommand<CR>
 map <Leader>tq :VimuxCloseRunner<CR>
@@ -81,3 +84,9 @@ map <Leader>tp :VimuxPromptCommand<CR>
 " Tagbar
 let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 nmap <F8> :TagbarToggle<CR>
+
+" Quickly edit/reload the vimrc file
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+set pastetoggle=<F2>
