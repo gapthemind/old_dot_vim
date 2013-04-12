@@ -86,7 +86,7 @@ let g:tagbar_ctags_bin='/usr/local/bin/ctags'
 nmap <F8> :TagbarToggle<CR>
 
 " Quickly edit/reload the vimrc file
-nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
+nmap <silent> <Leader>ev :e $MYVIMRC<CR>
+nmap <silent> <Leader>sv :so $MYVIMRC<CR>
 
 set pastetoggle=<F2>
