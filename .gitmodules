@@ -97,3 +97,9 @@
 [submodule "bundle/easymotion"]
 	path = bundle/easymotion
 	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "bundle/buffergator"]
+	path = bundle/buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "bundle/tagbar"]
+	path = bundle/tagbar
+	url = https://github.com/majutsushi/tagbar.git
